@@ -1,0 +1,412 @@
+/* Supplied collage artwork. Decoration only: no layout or game-state changes. */
+body{background:#f7e8bc url("assets/web/ui_background.webp?v=2") center top / cover fixed;color:#3e301c}
+/* The page landscape continues behind a separate paper header decoration. */
+header{position:relative;isolation:isolate;background:transparent;border-color:transparent}
+header::before{content:none}
+header .version{background:#fff0d5}
+header h1{color:#4c321a;text-shadow:0 1px #fff6dc}header .subtle{color:#513d27}
+.board{border-image: url("assets/web/ui_board_frame.webp") 155 / 25px / 9px stretch;box-shadow:0 3px 6px #5d482f38;background-color:#859451}
+.cell:not(.water):not(.rock):not(.allowed){background-color:#fff1cb;background-image:linear-gradient(125deg,#fff6dc88,#ead9aa66)}
+.cell:nth-child(even):not(.water):not(.rock):not(.allowed){background-color:#f4e8c3}
+#desktopControls{position:relative;isolation:isolate}
+.right>#desktopControls{background:#f9eac6;border-color:#bd9d65;border-image:url("assets/web/ui_control_paper.webp?v=2") 70 fill / 16px / 2px stretch}
+#infoDrawer{position:relative;isolation:isolate}
+.right>#infoDrawer{background:#fbeecd;border-color:#c5a570;border-image:url("assets/web/ui_research_notebook.webp?v=4") 90 60 90 85 fill / 18px 14px 18px 16px / 2px stretch}
+#infoDrawer::after{content:"";position:absolute;z-index:-1;right:4px;bottom:5px;width:74px;height:74px;background:url("assets/web/ui_pressed_flower_note.webp") center / contain no-repeat;opacity:.48;pointer-events:none}
+#desktopControls::after{content:"";position:absolute;z-index:-1;right:0;bottom:0;width:58px;height:58px;background:url("assets/web/ui_botanical_decor.webp") center / contain no-repeat;opacity:.5;pointer-events:none}
+.step-card,.result{background:#fff6ddbb;border-color:#c9ad78;box-shadow:0 2px 3px #73532715}
+/* Artwork includes transparent margins: paint those outside the hit target. */
+.controls button:not(.primary),.playback-bar>button,#remove,#quickInspect,.result button:not(.primary),.story-actions button:not(.primary){background:transparent;border-color:transparent;border-image:url("assets/web/ui_button_paper.webp") 40 80 fill / 14px 24px / 8px 14px stretch;color:#44331e;text-align:center;line-height:1.4}
+#desktopControls #remove,#desktopControls #quickInspect{min-width:66px;min-height:32px;padding:5px 12px;white-space:nowrap}
+#desktopPlaybackMount .playback-bar>button{min-height:32px;padding:5px 12px;white-space:nowrap}
+button:not(.cell):not(.token):hover:not(:disabled){filter:brightness(1.04)}
+.info-tabs button{border-image:none!important;color:#49351e}
+.info-tabs button[aria-pressed=true]{border-image:none!important;color:#49351e}
+#desktopTopbar{background:transparent;border-color:transparent;box-shadow:none}
+#desktopTopbar #stage{padding-inline:24px 32px;background:#ffefca;border-color:#bba16d;border-image:url("assets/web/ui_title_label.webp?v=2") 30 100 fill / 8px 20px / 0 stretch;color:#49341f}
+#desktopTopbar .turn,#desktopTopbar .goal-summary{background:#fff0cf;border-color:#c4a575;color:#49341f}
+#desktopPlaybackSettings>summary{width:fit-content;max-width:100%;padding:4px 20px;line-height:1.4;background:transparent;border:1px solid transparent;border-image:url("assets/web/ui_title_label.webp?v=2") 30 100 fill / 8px 20px / 0 stretch;color:#49341f}
+.right .population-table th{background:#dddcae}.log h3{background:#fff0cf}.right .inspected-organism{border-color:#d5bd91}.subtle{color:#77664d}
+@media(max-width:1100px){.board{border-image-width:15px;border-image-outset:5px}#infoDrawer{background:#fff1d4;border-image:url("assets/web/ui_research_notebook.webp?v=4") 90 60 90 85 fill / 12px / 0 stretch}header::before{width:100%;background-size:cover}}
+
+/* Keep every tab body inside the notebook writing area, clear of its binding. */
+.right>#infoDrawer{padding-left:28px;padding-right:12px}
+@media(max-width:1100px){#infoDrawer{padding-left:22px}}
+
+/* Dialogue artwork follows the speaker attribute already set by the story renderer. */
+#storyWindow{background:#fff2d4;border-color:transparent;border-image:url("assets/web/ui_dialogue_card.webp") 160 240 fill / 27px 34px / 0 stretch;padding:24px 28px;color:#44331e}
+#storyWindow:not([hidden]){display:grid;grid-template-columns:112px minmax(0,1fr);grid-template-areas:"top top" "section section" "face speaker" "face line" "actions actions";gap:8px 14px;align-items:start}
+#storyWindow .story-top{grid-area:top;min-width:0}
+#storySection{grid-area:section}
+#storyWindow .story-portrait{display:contents}
+#storyWindow .story-portrait>div{grid-area:speaker;min-width:0}
+#storyWindow #storyBadge{grid-area:face;width:112px;height:126px;align-self:start;margin:0;background-color:transparent;border:0;border-radius:0;box-shadow:none;background-position:center top;background-size:contain;background-repeat:no-repeat}
+#storyWindow[data-speaker="doctor"] #storyBadge{background-image:url("assets/web/doctor_boruboru.webp");font-size:0;color:transparent}
+#storyWindow[data-speaker="pipi"] #storyBadge{background-image:url("assets/web/pipi.webp");font-size:0;color:transparent}
+#storyWindow .story-line{grid-area:line;min-width:0;min-height:96px;max-height:none;overflow:visible;margin:0;font-size:var(--text-body);line-height:1.7;overflow-wrap:anywhere}
+#storyWindow .story-actions{grid-area:actions;display:flex;justify-content:flex-end;flex-wrap:wrap;margin-top:6px}
+#storyWindow #storySpeaker{font-size:15px}
+@media(max-width:700px),(orientation:landscape) and (max-height:600px) and (max-width:1100px){
+ #storyWindow{padding:15px 18px;border-image-width:18px 22px}
+ #storyWindow:not([hidden]){grid-template-columns:66px minmax(0,1fr);gap:5px 10px}
+ #storyWindow #storyBadge{width:66px;height:78px}
+ #storyWindow .story-line{font-size:14px;min-height:60px}
+ #storyWindow #storySpeaker{font-size:13px}
+}
+
+/* Shared roles: the same role uses the same font and spacing throughout the game. */
+:root{--ui-font:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,system-ui,sans-serif;--text-title:26px;--text-heading:20px;--text-body:16px;--text-small:14px;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:24px}
+body{font-family:var(--ui-font);font-size:var(--text-body);line-height:1.6}
+button,select{font-family:var(--ui-font);font-size:var(--text-body);line-height:1.4}
+header h1{font-family:var(--ui-font);font-size:var(--text-title)}
+header .subtle,header .version{font-size:var(--text-small)}
+#desktopControls,#infoDrawer,#storyWindow{font-family:var(--ui-font);font-size:var(--text-body);line-height:1.6}
+#desktopControls h2,#infoDrawer h2,#infoDrawer h3,#storyWindow #storySpeaker{font-size:var(--text-heading);line-height:1.4;font-weight:700;margin:0 0 var(--space-2)}
+#desktopControls .step-card h2 small{display:none}
+#infoDrawer .inspector,#infoDrawer .stage-info,#infoDrawer .rule,#infoDrawer .goals li,#infoDrawer .hint-box,#infoDrawer .food-web,#infoDrawer .record-entry,#infoDrawer .log,#infoDrawer .log p,#infoDrawer .entity-events,#infoDrawer .observed-facts,#infoDrawer .cell-meta,#infoDrawer .organism-title,#infoDrawer .population-table,#infoDrawer .population-table th,#infoDrawer .population-table td,#infoDrawer .evidence-row>span{font-size:var(--text-body);line-height:1.6}
+#infoDrawer .inspector>p,#infoDrawer #brief p,#infoDrawer .hint-box p{margin:0 0 var(--space-2)}
+#desktopControls .subtle,#infoDrawer .subtle,#infoDrawer #brief p,#infoDrawer .chapter-label,#infoDrawer caption,#infoDrawer .observed-facts>small,#infoDrawer .record-entry>span,#infoDrawer .causal-context,#infoDrawer .phase-log small,#storyWindow #storyProgress,#storyWindow #storyRole{font-size:var(--text-small);line-height:1.5}
+#infoDrawer summary,#infoDrawer .inspector details>summary,#infoDrawer #populationDetails>summary{font-size:var(--text-body);line-height:1.5;min-height:32px;padding:4px 0}
+#infoDrawer #brief h2{margin:8px 0 12px}
+#infoDrawer .goals li{padding:8px 0}
+#infoDrawer .population-table th,#infoDrawer .population-table td{padding:8px 5px}
+#infoDrawer .population-table .actor-link,#infoDrawer .goal-evidence,#infoDrawer .event-review-button,#infoDrawer .evidence-row button,#infoDrawer #goalActions button,#infoDrawer .record-entry,#infoDrawer #showHint,#infoDrawer .evidence-links button{font-size:var(--text-small);line-height:1.5;min-height:30px;padding:4px 8px}
+#infoDrawer .hint-box,#infoDrawer .turn-log,#infoDrawer .turn-log>summary,#infoDrawer .phase-log>summary,#infoDrawer .record-entry,#infoDrawer #showHint,#infoDrawer #recordsScope,#infoDrawer #logTurn{background:#f7e6bf;border-color:transparent;box-shadow:none}
+#infoDrawer .record-entry:hover:not(:disabled),#infoDrawer #showHint:hover:not(:disabled){background:#e9cfa0}
+#playSpeed,#infoDrawer .goal-evidence,#infoDrawer .event-review-button,#infoDrawer .close-observation,#infoDrawer .causal-relations button,#infoDrawer .causal-goal-links button,#infoDrawer .evidence-links button,#infoDrawer .evidence-row>button,#infoDrawer #goalActions button{background:#ecd59e;border:1px solid #b49158;border-image:none;color:#49381f;box-shadow:none}
+#desktopTopbar{background:none;border-color:transparent;box-shadow:none}
+#desktopTopbar #stage{font-size:var(--text-heading);background-color:transparent;border-color:transparent;box-shadow:none}
+#desktopTopbar .turn,#desktopTopbar .goal-summary{font-size:var(--text-body)!important;line-height:1.5;background:none;border-color:transparent;box-shadow:none}
+#storyWindow{background:#f8e8bf;border:0;border-image:url("assets/web/ui_dialogue_card.webp") 260 340 fill / 0 / 0 stretch;box-shadow:none;border-radius:0}
+#storyWindow .story-line{font-size:var(--text-body)}
+/* The notebook artwork itself provides the paper tabs and the opaque writing surface. */
+.tab-icon img{display:block;width:28px;height:28px;object-fit:contain}
+.tab-icon img[hidden],.tab-icon-fallback[hidden]{display:none}
+.right .info-tabs{background:none;border:0;box-shadow:none}
+.right .info-tabs button{border-image:none!important;box-shadow:none}
+.right .info-tabs button:not([aria-pressed="true"]){background:transparent;border-color:transparent;color:#49351e}
+.right .info-tabs button[aria-pressed="true"]{background:transparent!important;color:#49351e;font-weight:800;box-shadow:none;border-color:transparent}
+#infoDrawer::after,#desktopControls::after{content:none}
+@media(min-width:1101px){
+ /* One paper sheet, with compact groups in natural reading order. */
+ .right>#desktopControls{display:flex;flex-direction:column;justify-content:flex-start;gap:var(--space-4);aspect-ratio:auto;min-height:0;margin:0;padding:22px 7% 28px;background:none;border:1px solid transparent;border-radius:0;border-image:url("assets/web/ui_control_paper.webp?v=2") 220 260 fill / 24px 28px / 0 stretch;box-shadow:none}
+ .right>#desktopControls[hidden]{display:none}
+ #desktopControls #selectionCard,#desktopControls #placementCard,#desktopControls #playFeedback>.controls,#desktopControls .result,#desktopControls #desktopPlaybackSettings{background:none;border:0;border-image:none;border-radius:0;box-shadow:none;padding:0;margin:0;min-height:0}
+ #desktopControls .step-card h2{font-size:var(--text-heading);line-height:1.4;margin:0 0 var(--space-2)}
+ #desktopControls .step-number{width:26px;height:26px;font-size:var(--text-body)}
+ #desktopControls .inventory-wrap{display:flex;align-items:center;gap:var(--space-2);margin:0;position:static}
+ #desktopControls #inventory{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-2);min-width:0;flex:1}
+ #desktopControls #inventoryWrap[data-slot-count="1"] #inventory{display:block;flex:0 1 104px;width:104px;max-width:104px}
+ #desktopControls #inventory .token{width:100%;min-width:0;min-height:58px;padding:4px 6px;margin:0;font-size:var(--text-body);line-height:1.4}
+ #desktopControls #inventory .token>span{flex-direction:row;gap:4px;align-items:center;flex-wrap:wrap;justify-content:center}
+ #desktopControls #inventory .token .sprite{width:28px;height:28px}
+ #desktopControls #inventory .token small{font-size:var(--text-small);line-height:1.4}
+ #desktopControls #remove{position:static;align-self:center;flex:none;margin:0 0 0 auto;min-height:32px;min-width:56px;padding:4px 8px;font-size:var(--text-small)}
+ #desktopControls #placementCard{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 8px;align-items:start}
+ #desktopControls #placementCard>h2{grid-column:1/-1;margin:0 0 4px}
+ #desktopControls .placement-instruction{grid-column:1;grid-row:2;display:block;min-width:0}
+ #desktopControls .placement-target{display:none}
+ #desktopControls #placementFeedback .message{font-size:var(--text-small);line-height:1.5;min-height:0;padding:0;margin:0;background:none;border:0}
+ #desktopControls #placementActions{grid-column:2;grid-row:2;align-self:start;display:flex;gap:4px;margin:0}
+ #desktopControls #quickInspect{font-size:var(--text-small);min-height:32px;min-width:64px;padding:4px 8px}
+ #desktopControls #playFeedback{display:flex;flex-direction:column;gap:var(--space-3);padding:0;margin:0;min-width:0}
+ #desktopControls #playFeedback>.controls{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-2)}
+ #desktopControls .controls button{font-size:var(--text-body);line-height:1.4;min-height:34px;margin:0;padding:5px 8px}
+ #desktopControls .controls #start,#desktopControls .controls #next{grid-column:1/-1;font-size:var(--text-heading);font-weight:700;min-height:44px;line-height:1.3;padding:7px 8px}
+ #desktopControls .controls #back,#desktopControls .controls #reset{min-height:34px;font-size:var(--text-body);padding:5px 8px}
+ #desktopControls .desktop-step{width:26px;height:26px;font-size:var(--text-body);margin-right:6px}
+ #desktopControls .button-extra{font-size:var(--text-small)}
+ #desktopControls .result h2{font-size:var(--text-heading);line-height:1.4;margin:0 0 var(--space-2)}
+ #desktopControls .result>.subtle{font-size:var(--text-small);line-height:1.5;margin:0 0 var(--space-3)}
+ #desktopControls .failure-heading{font-size:var(--text-body);line-height:1.5;margin:0 0 var(--space-2)}
+ #desktopControls .failure-list{font-size:var(--text-body);line-height:1.5;margin:0 0 var(--space-3);padding-left:18px}
+ #desktopControls .failure-list li{font-size:var(--text-small);line-height:1.5;padding:4px 0}
+ #desktopControls .failure-list button{display:inline-block;width:100%;font-size:var(--text-body);line-height:1.4;min-height:32px;margin:0 0 3px;padding:4px 8px;text-align:left}
+ #desktopControls .result>button{width:100%;min-height:34px;font-size:var(--text-body);margin:0;padding:5px 8px}
+ #desktopControls #desktopPlaybackSettings{padding-top:var(--space-3);border-top:1px solid #b9a17166}
+ #desktopControls #desktopPlaybackSettings>summary{display:block;width:100%;max-width:none;min-height:0;font-size:var(--text-heading);font-weight:700;line-height:1.4;margin:0 0 var(--space-2);padding:0;background:none;border:0;border-image:none;box-shadow:none}
+ #desktopControls #desktopPlaybackMount .playback-bar{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-2);padding:0;line-height:1.4}
+ #desktopControls #desktopPlaybackMount .playback-bar>button{flex:0 0 auto;font-size:var(--text-body);min-height:34px;line-height:1.4;padding:5px 8px}
+ #desktopControls #desktopPlaybackMount .playback-bar label{display:inline-flex;align-items:center;gap:4px;font-size:var(--text-small);line-height:1.4}
+ #desktopControls #desktopPlaybackMount .playback-bar select{width:auto;min-height:32px;margin:0;padding:4px 7px;font-size:var(--text-small)}
+ #desktopControls #desktopPlaybackMount>p{font-size:var(--text-small);line-height:1.5;margin:var(--space-2) 0 0}
+ #desktopControls #desktopPlaybackMount #settingsStatus{display:none}
+ .right>#infoDrawer{position:relative;isolation:isolate;aspect-ratio:650/850;margin:0;padding:18% 10% 24px 15%;background:transparent url("assets/web/ui_research_notebook.webp?v=4") center top / contain no-repeat;border:1px solid transparent;border-image:none;box-shadow:none;overflow:visible}
+ .right #infoDrawer>.info-tabs{position:absolute;top:1.7%;left:9%;right:3.5%;height:66px;display:grid;grid-template-columns:1.22fr repeat(5,minmax(0,1fr));gap:0;margin:0;padding:0;z-index:7;align-items:stretch}
+ .right #infoDrawer>.info-tabs button{margin:0;min-height:66px;min-width:0;padding:4px 0 6px;gap:2px;font-size:var(--text-small);line-height:1.4;border-image:none!important}
+}
+@media(min-width:1101px) and (max-width:1499px){
+ .right>#desktopControls{padding:18px 6% 22px;gap:var(--space-3);border-image-width:20px 23px}
+ .right>#infoDrawer{background:none;border-image:url("assets/web/ui_research_notebook.webp?v=4") 120 90 100 90 fill / 96px 45px 50px 45px / 0 stretch;padding-top:100px}
+ .right #infoDrawer>.info-tabs{top:12px}
+}
+@media(max-width:1100px){
+ :root{--text-heading:18px}
+ .tab-icon img{width:24px;height:24px}
+ .right .info-tabs button{font-size:var(--text-small)}
+ header h1{font-size:20px}
+ #infoDrawer .log,#infoDrawer .inspector{font-size:var(--text-body)}
+}
+@media(orientation:landscape) and (max-height:600px) and (max-width:1100px){header h1{font-size:18px}.right .info-tabs button{font-size:var(--text-small)}}
+
+@media(min-width:1101px){main[data-mode="simulation"] #desktopControls #selectionCard,main[data-mode="simulation"] #desktopControls #placementCard{display:none}}
+
+/* Explicit role assignments override the old screen-specific micro type rules. */
+#infoDrawer #brief h2{font-size:var(--text-heading);line-height:1.4}
+#infoDrawer #stateList>p,#infoDrawer .turn-log>summary b,#infoDrawer .turn-log>summary .subtle,#infoDrawer .phase-log>summary,#infoDrawer .record-entry>span{font-size:var(--text-small);line-height:1.5}
+#storyWindow .story-top{font-size:var(--text-small);line-height:1.5}
+@media(min-width:1101px) and (max-height:760px){
+ .right>#desktopControls{padding:14px 6% 18px;gap:var(--space-2)}
+ #desktopControls #desktopPlaybackSettings{padding-top:var(--space-2)}
+ #desktopControls .step-card h2{margin-bottom:4px}
+ #desktopControls #playFeedback{gap:var(--space-2)}
+}
+@media(min-width:1101px){#desktopControls .controls #back,#desktopControls .controls #reset{white-space:nowrap;padding-inline:4px;min-width:0}}
+
+/* Warm controls throughout; supplied images are left untouched. */
+:root{--paper-control:#efddb4;--paper-edge:#b89a65;--scroll-thumb:#af8d51}
+button,select{background-color:var(--paper-control);border-color:var(--paper-edge);color:#49381f}
+button.primary{color:#fff0cf}
+select,select option{background-color:var(--paper-control);color:#49381f}
+#inventory .token:not(.chosen){background:var(--paper-control);border-color:var(--paper-edge)}
+#inventory .token.chosen{background:#e9ddb3}
+.right #infoDrawer>.info-tabs button,.right #infoDrawer>.info-tabs button:hover,.right #infoDrawer>.info-tabs button[aria-pressed="true"]{background:transparent!important;border-image:none!important;border-color:transparent!important;box-shadow:none!important;color:#49351e}
+.right #infoDrawer>.info-tabs button[aria-pressed="true"] .tab-label{text-decoration:underline;text-decoration-color:#9c7237;text-decoration-thickness:2px;text-underline-offset:4px;font-weight:800}
+/* A common writing area is shared by all six tabs. */
+#infoDrawer>[data-info-panel]{width:100%;max-width:100%;min-width:0;padding:0;margin:0;box-sizing:border-box;overflow-wrap:anywhere}
+#infoDrawer>[data-info-panel]>*{max-width:100%;min-width:0;box-sizing:border-box}
+#infoDrawer select{width:100%}
+#infoDrawer .population-table{width:100%;table-layout:fixed}
+#infoDrawer .population-scroll,#infoDrawer .log,#infoDrawer #recordList,#infoDrawer .entity-events,#relatedPanel>.evidence{scrollbar-gutter:stable;padding-right:8px}
+/* Slim, quiet scrollbars instead of white native tracks and arrow buttons. */
+*{scrollbar-width:thin;scrollbar-color:var(--scroll-thumb) transparent}
+*::-webkit-scrollbar{width:7px;height:7px}
+*::-webkit-scrollbar-track{background:transparent}
+*::-webkit-scrollbar-thumb{background:#af8d51;border:2px solid transparent;background-clip:padding-box;border-radius:8px}
+*::-webkit-scrollbar-thumb:hover{background-color:#8b6935}
+*::-webkit-scrollbar-button{display:none;width:0;height:0}
+
+/* Desktop order: notebook | board | wider action/result sheet. DOM and handlers stay intact. */
+@media(min-width:1101px){
+ main{grid-template-columns:minmax(280px,1.06fr) minmax(0,min(850px,calc(100svh - 155px),42vw)) minmax(320px,1fr);column-gap:0;row-gap:8px;padding-inline:0;align-items:start}
+ #desktopTopbar{grid-column:1/-1;grid-row:1}
+ main>.play{grid-column:2;grid-row:2;min-width:0}
+ main>.play .board{width:100%;max-width:none}
+ main>.right,main.story-busy>.right{display:contents}
+ .right>#infoDrawer{grid-column:1;grid-row:2;min-width:0;aspect-ratio:auto;height:calc(100svh - 145px);min-height:0;max-height:calc(100svh - 145px);padding-top:100px;padding-bottom:20px;background:none;border-image:url("assets/web/ui_research_notebook.webp?v=4") 120 90 100 90 fill / 96px 45px 50px 45px / 0 stretch}
+ .right #infoDrawer>.info-tabs{top:12px;grid-template-columns:1.1fr repeat(5,minmax(0,1fr))}
+ #infoDrawer>[data-info-panel]{max-height:calc(100svh - 270px);overflow-y:auto;scrollbar-gutter:stable;padding-right:8px}
+ #infoDrawer .population-scroll,#infoDrawer .log,#infoDrawer #recordList{max-height:none;height:auto;overflow:visible;scrollbar-gutter:auto;padding-right:0}
+ .right>#desktopControls{grid-column:3;grid-row:2;min-width:0;width:100%;max-height:calc(100svh - 145px);overflow-y:auto;scrollbar-gutter:stable;padding-inline:6%}
+ .right>#storyWindow{grid-column:3;grid-row:2;max-width:none;min-width:0}
+ main.story-busy{grid-template-columns:minmax(0,min(850px,calc(100svh - 155px))) minmax(360px,1fr)}
+ main.story-busy>.play{grid-column:1;grid-row:2}
+ main.story-busy .right>#storyWindow{grid-column:2;grid-row:2}
+ main.story-busy .right>#infoDrawer,main.story-busy .right>#desktopControls{display:none}
+}
+
+/* Image-led labels for the notebook tabs and placement choices. */
+.right #infoDrawer>.info-tabs .tab-icon img{width:40px;height:40px;object-fit:contain}
+.right #infoDrawer>.info-tabs .tab-label{font-size:12px;line-height:1.2}
+.right #infoDrawer>.info-tabs button{padding-top:2px;padding-bottom:2px;gap:2px}
+#desktopControls #inventory .token{font-size:14px;line-height:1.35}
+#desktopControls #inventory .token>span{flex-direction:column;flex-wrap:nowrap;gap:2px;justify-content:center}
+#desktopControls #inventory .token .sprite{width:52px;height:52px;object-fit:contain}
+#desktopControls #inventory .token small{font-size:12px;line-height:1.35}
+@media(max-width:1100px){.right #infoDrawer>.info-tabs .tab-icon img{width:30px;height:30px}}
+/* The frog belongs to the supplied background; avoid a second brand sprite. */
+header .brand-mark{display:none}
+@media(min-width:1101px){
+ header>div{padding-left:clamp(140px,12.5vw,250px);transform:translateY(12px)}
+ #desktopTopbar .turn,#desktopTopbar .goal-summary{transform:translateY(14px)}
+}
+
+/* Frame is a pointer-transparent foreground layer; board fill and cells stay behind it. */
+#board{position:relative;isolation:isolate;border-image:none;border-color:transparent;box-shadow:none;background-clip:padding-box}
+#board::after{content:"";position:absolute;inset:-7px -7px -24px;z-index:20;border:1px solid transparent;border-image:url("assets/web/ui_board_frame.webp?v=2") 180 120 170 120 / 24px 24px 36px 24px / 0 stretch;pointer-events:none}
+.board-wrap>.event-caption{position:relative;z-index:21}
+@media(max-width:1100px){#board::after{inset:-4px -4px -16px;border-image-width:16px 16px 24px 16px}}
+/* Preserve the complete collage artwork, including books and the footer label. */
+#board{border-width:0;padding:9.5% 13.25% 17%;background-clip:content-box}
+#board::after{inset:0;border:0;border-image:none;background:url("assets/web/ui_board_frame.webp?v=2") center / 100% 100% no-repeat}
+.board-wrap>.event-caption{position:absolute;left:33%;right:24%;bottom:8.5%;z-index:21;margin:0;padding:0;min-height:0;font-size:12px;line-height:1.25}
+@media(max-width:1100px){#board::after{inset:0;border-image:none}.board-wrap>.event-caption{font-size:10px}}
+
+/* Keep the background frog inside the left edge and group the experiment status beside its label. */
+body{background-position:left top}
+@media(min-width:1101px){
+ #desktopTopbar{align-items:center;justify-content:flex-start;gap:8px}
+ #desktopTopbar .stage-toolbar{flex:0 1 40%;max-width:660px;min-width:240px}
+ #desktopTopbar #stage{border-image-slice:30 140;border-image-width:10px 35px;padding-inline:24px 45px}
+ #desktopTopbar .turn{flex:0 0 auto;margin:0;padding-inline:8px;transform:none}
+ #desktopTopbar .goal-summary{flex:1 1 0;min-width:0;max-width:none;margin:0;padding-inline:8px;transform:none}
+}
+/* Extend the grid under the foreground frame instead of leaving an inner paper gutter. */
+#board{aspect-ratio:1;height:auto;padding:9.5% 9% 15.5% 11%;grid-template-rows:repeat(var(--board-size,5),minmax(0,1fr))}
+#board>.cell{aspect-ratio:auto;min-height:0}
+#board .cell .organism .hunger,#board .cell .organism .name{display:none!important}
+#board::before{content:"";position:absolute;inset:7% 6.5% 13.5% 8.5%;z-index:-1;background:#859451;border-radius:3%;pointer-events:none}
+/* Use the decorative edge gutters without changing either side-panel width. */
+@media(min-width:1101px){main:not(.story-busy)>.play #board{width:calc(100% + 36px);margin-left:-18px;margin-right:-18px}}
+/* Opaque paper under the native stage selector; keep the supplied frame intact. */
+#desktopTopbar #stage{background-color:#f7e3b6;background-clip:padding-box;border-radius:18px}
+@media(min-width:1101px){#desktopTopbar{transform:translateY(12px)}}
+/* Display the complete supplied band behind a transparent native selector. */
+@media(min-width:1101px){
+ #desktopTopbar{transform:none;align-items:flex-end}
+ #desktopTopbar .stage-toolbar{flex:0 0 34%;min-width:240px;max-width:600px;aspect-ratio:8/1;background:url("assets/web/ui_title_label.webp?v=2") center / contain no-repeat;position:relative}
+ #desktopTopbar #stage{display:block;width:100%;height:100%;min-height:0;margin:0;padding:0 14% 0 6%;appearance:none;-webkit-appearance:none;background:transparent;border:0;border-image:none;border-radius:0;box-shadow:none;line-height:1.4}
+ #desktopTopbar #stage:focus-visible{outline:2px solid #9e7840;outline-offset:-8px;border-radius:14px}
+ #desktopTopbar .turn,#desktopTopbar .goal-summary{transform:translateY(6px)}
+}
+/* Center a slightly larger grid in the frame opening with even edge gutters. */
+#board{padding:9.75% 13.25% 18.25% 14.75%}
+#board::before{opacity:1;background:#859451}
+@media(min-width:1101px){main:not(.story-busy)>.play #board{padding:calc(9.75% + 3.51px) calc(13.25% + 4.77px) calc(18.25% + 6.57px) calc(14.75% + 5.31px)}}
+
+/* Keep the supplied frog beside the title and lower the experiment heading row. */
+@media(min-width:1101px){
+ body{isolation:isolate}
+ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:url("assets/web/ui_background.webp?v=2") 36px top / cover no-repeat;mask-image:linear-gradient(to right,transparent,black 80px)}
+ header>div{padding-left:calc(clamp(140px,12.5vw,250px) + 36px)}
+ #desktopTopbar{transform:translateY(18px)}
+}
+/* Original supplied start-button artwork; preserve its complete shape and leaf. */
+#desktopControls .controls #start,#start{
+ background:transparent url("assets/web/ui_turn_button.webp?v=2") center / 100% 100% no-repeat;
+ border:0;border-image:none;border-radius:0;box-shadow:none;color:#fff0cf;
+ aspect-ratio:1925/336;height:auto;padding:9px 15%;
+}
+#desktopControls .controls #start:hover:not(:disabled),#start:hover:not(:disabled){background-color:transparent}
+
+/* Square cells, centered vertically in the opening; omit repeated fixed labels. */
+#board .cell .lock{display:none}
+
+/* Book-title typography and independent fine alignment of the experiment labels. */
+header h1{font-family:"Yu Mincho","Hiragino Mincho ProN","Noto Serif JP",serif;font-size:30px;font-weight:700;letter-spacing:.06em;line-height:1.25}
+header .subtle{font-family:"Yu Mincho","Hiragino Mincho ProN","Noto Serif JP",serif}
+@media(min-width:1101px){
+ #desktopTopbar .stage-toolbar{transform:translateY(6px)}
+ #desktopTopbar .turn,#desktopTopbar .goal-summary{transform:translateY(-2px)}
+}
+@media(max-width:700px){header h1{font-size:22px}}
+
+/* Locally served, title-only rounded Japanese font. */
+@font-face{font-family:"Zen Maru Title";font-style:normal;font-weight:700;font-display:swap;src:url("assets/fonts/zen-maru-title-700.ttf") format("truetype")}
+header h1{font-family:"Zen Maru Title","Hiragino Maru Gothic ProN","Yu Gothic",sans-serif;font-weight:700;letter-spacing:.035em}
+header .subtle{font-family:var(--ui-font)}
+@media(min-width:1101px){
+ #desktopTopbar .stage-toolbar{flex-basis:36%;max-width:660px}
+ #desktopTopbar .turn{padding:10px 18px;min-height:44px;border:0;border-radius:0;background:none;border-image:url("assets/web/ui_objectives_frame.webp") 60 140 fill / 12px 28px / 0 stretch}
+ #desktopTopbar .goal-summary{padding:10px 22px;min-height:44px;border:0;border-radius:0;background:none;border-image:url("assets/web/ui_turn_counter_frame.webp") 100 180 fill / 15px 30px / 0 stretch;white-space:normal}
+}
+
+/* Reference proportions: prominent book title, then one aligned experiment row. */
+@media(min-width:1101px){
+ body::before{content:none}
+ header{height:64px;padding-block:0}
+ header>div{padding-left:clamp(140px,12vw,230px);transform:none;gap:14px}
+ header h1{font-size:clamp(32px,2.8vw,44px);line-height:1.2}
+ header .subtle{font-size:16px;font-weight:600}
+ #desktopTopbar{display:grid;grid-template-columns:minmax(0,1.5fr) max-content minmax(0,1fr);column-gap:24px;align-items:center;transform:none}
+ #desktopTopbar .stage-toolbar{width:100%;min-width:0;max-width:none;transform:none}
+ #desktopTopbar .turn{transform:none;font-size:18px!important;line-height:1.4}
+ #desktopTopbar .goal-summary{transform:none;width:100%;max-width:none;min-width:0;font-size:14px!important;line-height:1.5;padding-inline:18px}
+}
+
+/* Keep the panel row fixed; larger heading artwork must not grow its layout row. */
+@media(min-width:1101px){
+ #desktopTopbar{display:flex;height:56px;min-height:56px;padding-block:0;gap:12px;align-items:center;justify-content:flex-start;overflow:visible}
+ #desktopTopbar .stage-toolbar{flex:0 1 760px;width:auto;min-width:240px;max-width:760px;aspect-ratio:8/1;height:auto;align-self:center}
+ #desktopTopbar .turn{flex:0 0 auto;width:max-content;min-height:38px;padding:7px 15px;font-size:16px!important;white-space:nowrap}
+ #desktopTopbar .goal-summary{flex:0 0 auto;width:max-content;max-width:none;min-height:38px;padding:7px 18px;font-size:14px!important;white-space:nowrap}
+}
+
+/* Independent optical adjustments; the two side sheets keep their positions. */
+@media(min-width:1101px){
+ header>div{transform:translateY(5px)}
+ #desktopTopbar #stage{padding-left:8%}
+ main:not(.story-busy)>.play{transform:translateY(-22px)}
+ #desktopTopbar .turn,#desktopTopbar .goal-summary{transform:translateY(6px)}
+ #desktopTopbar .goal-summary{border-image:none;background:transparent url("assets/web/ui_turn_counter_frame.webp") center / 100% 100% no-repeat}
+}
+
+/* Shorten only the title artwork; keep the label and layout footprint unchanged. */
+@media(min-width:1101px){
+ #desktopTopbar .stage-toolbar{background-size:calc(100% - 24px) auto;background-position:left center}
+ .right>#infoDrawer{transform:translateY(-14px)}
+ #desktopTopbar .goal-summary{position:relative;z-index:22;display:flex;align-items:center;justify-content:center;aspect-ratio:1995/416;height:auto;min-height:0;box-sizing:border-box;background-size:contain;background-position:center;background-repeat:no-repeat;border-image:none}
+}
+
+/* Match the short thick artwork to turns and the long thin artwork to objectives. */
+@media(min-width:1101px){
+ #desktopTopbar .turn{display:flex;align-items:center;justify-content:center;aspect-ratio:1995/416;height:auto;min-height:0;border-image:none;background:transparent url("assets/web/ui_turn_counter_frame.webp") center / contain no-repeat}
+ #desktopTopbar .goal-summary{aspect-ratio:2048/210;height:auto;min-height:0;border-image:none;background:transparent url("assets/web/ui_objectives_frame.webp") center / contain no-repeat}
+ main:not(.story-busy)>.play{margin-bottom:-22px}
+}
+
+/* Align each hit target with the centers in the notebook's 90px sliced artwork. */
+@media(min-width:1101px){
+ .right #infoDrawer>.info-tabs{left:0;right:0;display:block}
+ .right #infoDrawer>.info-tabs button{position:absolute;top:0;width:calc(20% - 18px);height:66px;transform:translateX(-50%)}
+ .right #infoDrawer>.info-tabs button:hover:not(:disabled){transform:translateX(-50%)}
+ .right #infoDrawer>.info-tabs button:nth-child(1){left:calc(4.68085% + 40.7872px)}
+ .right #infoDrawer>.info-tabs button:nth-child(2){left:calc(25.31915% + 22.2128px)}
+ .right #infoDrawer>.info-tabs button:nth-child(3){left:calc(45.10638% + 4.4043px)}
+ .right #infoDrawer>.info-tabs button:nth-child(4){left:calc(64.89362% - 13.4043px)}
+ .right #infoDrawer>.info-tabs button:nth-child(5){left:calc(84.89362% - 31.4043px)}
+ .right #infoDrawer>.info-tabs button:nth-child(6){left:calc(100% - 34px)}
+ .right #infoDrawer>.info-tabs .tab-icon{transform:translateY(3px)}
+ .board-wrap>.event-caption{left:calc(54.5% + 1.62px);right:auto;top:89.75%;bottom:auto;width:40%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;text-align:center}
+}
+
+/* A modest heading tier between the 16px instructions and the primary action. */
+#desktopControls #selectionCard h2,#desktopControls #placementCard h2,#desktopControls #desktopPlaybackSettings>summary{font-size:18px}
+
+/* Final small optical offsets requested for the headings, caption and last tabs. */
+#desktopControls #selectionCard h2,#desktopControls #placementCard h2,#desktopControls #desktopPlaybackSettings>summary{font-size:17px}
+@media(min-width:1101px){
+ .board-wrap>.event-caption{left:calc(54.5% - 4.38px)}
+ .right #infoDrawer>.info-tabs button:nth-child(4){left:calc(64.89362% - 17.4043px)}
+ .right #infoDrawer>.info-tabs button:nth-child(5){left:calc(84.89362% - 35.4043px)}
+ .right #infoDrawer>.info-tabs button:nth-child(6){left:calc(100% - 38px)}
+}
+
+/* Rules tab only: a small left nudge and a slightly smaller book illustration. */
+.right #infoDrawer>.info-tabs [data-info-tab="rules"] .tab-icon img{transform:scale(.925)}
+@media(min-width:1101px){.right #infoDrawer>.info-tabs button:nth-child(6){left:calc(100% - 42px)}}
+
+/* Event stills reuse the original conversation DOM and controls in a modal layer. */
+body.event-still-open{overflow:hidden}
+#eventStillLayer[hidden]{display:none!important}
+#eventStillLayer{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:12px;background:#302819f5;overscroll-behavior:contain}
+.event-still-stage{position:relative;width:min(calc(100vw - 24px),calc((100svh - 24px)*16/9));aspect-ratio:16/9;isolation:isolate}
+.event-still-image{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;user-select:none}
+.event-still-dialogue{position:absolute;left:3%;right:3%;bottom:3%;z-index:1}
+#eventStillLayer #storyWindow{display:grid!important;grid-template-columns:100px minmax(0,1fr);gap:0 16px;position:static;width:100%;max-width:none;min-height:min(25svh,240px);max-height:65svh;margin:0;padding:18px 24px;border:0;border-radius:12px;background:#f7e7bf;border-image:url("assets/web/ui_dialogue_card.webp") 260 340 fill / 0 / 0 stretch;box-shadow:0 4px 16px #30281955;overflow:auto;color:#44331e}
+#eventStillLayer .story-top{grid-column:2;grid-row:1;align-items:center;font-size:14px}
+#eventStillLayer #storyProgress{font-size:12px}
+#eventStillLayer #storySection{grid-column:2;grid-row:2;margin-top:4px;font-size:14px}
+#eventStillLayer .story-portrait{grid-column:1;grid-row:1/5;display:flex;flex-direction:column;align-items:center;gap:4px;margin:0;text-align:center}
+#eventStillLayer #storyBadge{width:64px;height:72px;margin:0;flex:none}
+#eventStillLayer #storySpeaker{font-size:16px;line-height:1.5}
+#eventStillLayer #storyRole{display:none}
+#eventStillLayer #storyLine{grid-column:2;grid-row:3;min-height:0;max-height:25svh;overflow:auto;margin:6px 0 10px;font-size:clamp(16px,1.4vw,22px);line-height:1.75}
+#eventStillLayer .story-actions{grid-column:2;grid-row:4;align-self:end;gap:12px}
+#eventStillLayer .story-actions button{min-height:40px;min-width:96px;font-size:16px}
+@media(max-width:700px),(max-height:500px){
+ #eventStillLayer{padding:8px}
+ .event-still-stage{width:100%;height:calc(100svh - 16px);aspect-ratio:auto}
+ .event-still-image{object-position:center top}
+ .event-still-dialogue{left:0;right:0;bottom:0}
+ #eventStillLayer #storyWindow{display:flex!important;flex-direction:column;gap:4px;padding:12px 16px;min-height:0;max-height:60svh}
+ #eventStillLayer .story-portrait{flex-direction:row;text-align:left;margin:0}
+ #eventStillLayer #storyBadge{display:none}
+ #eventStillLayer #storyLine{max-height:25svh;font-size:16px;margin:2px 0 8px}
+ #eventStillLayer .story-actions{align-self:stretch}
+}
+
+/* Use a symmetric drawing box; no old text-line baseline may shift the artwork. */
+#board .cell .occupants{inset:0;width:auto}
+#board .cell .organism>.creature{position:absolute;inset:0;display:block;transform:none;line-height:0}
+#board .cell .sprite{display:block;object-position:center}

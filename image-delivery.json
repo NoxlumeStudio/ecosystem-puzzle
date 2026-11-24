@@ -1,0 +1,585 @@
+{
+  "originals": "Original PNGs are retained unchanged in assets/.",
+  "images": [
+    {
+      "source": "aphid.png",
+      "sha256": "660e8ba8c254de2432ad92dcd8b8564914e6a28d0b7fe9037ecd0b1a9f50f5a4",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 193081,
+      "delivery": "web/aphid.webp",
+      "deliveryBytes": 142530,
+      "encoding": "lossless"
+    },
+    {
+      "source": "bee.png",
+      "sha256": "5491d75fbeb9bb25afe7385d1908e8440747d989e45f278cf678b49b07ef475c",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 253160,
+      "delivery": "web/bee.webp",
+      "deliveryBytes": 187236,
+      "encoding": "lossless"
+    },
+    {
+      "source": "bird.png",
+      "sha256": "7911d9d537169c1a957fab420f4a651df5377f733627a760c06131b298604972",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 234530,
+      "delivery": "web/bird.webp",
+      "deliveryBytes": 173586,
+      "encoding": "lossless"
+    },
+    {
+      "source": "caterpillar.png",
+      "sha256": "99da559e0810e8a823c3bc458f4f9097c6dfa474857089d44009728168b48c20",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 145950,
+      "delivery": "web/caterpillar.webp",
+      "deliveryBytes": 113958,
+      "encoding": "lossless"
+    },
+    {
+      "source": "doctor_boruboru.png",
+      "sha256": "1fe088ee5c62fd0685598b4a4d3c358bb46d0a0bb08f0e84c873564ea76a98f7",
+      "width": 1254,
+      "height": 1254,
+      "sourceBytes": 2231468,
+      "delivery": "web/doctor_boruboru.webp",
+      "deliveryBytes": 1344460,
+      "encoding": "lossless"
+    },
+    {
+      "source": "earthworm.png",
+      "sha256": "2594a028809e572a4ccd9fc05393a1bf08f00ae39586e4075f05a68af3346016",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 137567,
+      "delivery": "web/earthworm.webp",
+      "deliveryBytes": 98232,
+      "encoding": "lossless"
+    },
+    {
+      "source": "event_birth.png",
+      "sha256": "cf7ce5aac3aa9983b4501825cbce7da6dd1e878497194f49490809f95359ca1f",
+      "width": 1254,
+      "height": 1254,
+      "sourceBytes": 1783433,
+      "delivery": "web/event_birth.webp",
+      "deliveryBytes": 1049386,
+      "encoding": "lossless"
+    },
+    {
+      "source": "event_poison_death.png",
+      "sha256": "3d348fcb6d4599d5dc3723a616bca04d6739fc5bb3690bed1d0f1344905298df",
+      "width": 256,
+      "height": 256,
+      "sourceBytes": 56474,
+      "delivery": "web/event_poison_death.webp",
+      "deliveryBytes": 41266,
+      "encoding": "lossless"
+    },
+    {
+      "source": "event_predation.png",
+      "sha256": "00e1a85f22c503a8bb68c12d08ac833de38bea5af9d9baf944bab1c77f7ef847",
+      "width": 256,
+      "height": 256,
+      "sourceBytes": 59925,
+      "delivery": "web/event_predation.webp",
+      "deliveryBytes": 45952,
+      "encoding": "lossless"
+    },
+    {
+      "source": "event_starvation.png",
+      "sha256": "ff38ab248966b9df0553c16f441773ec81e23a326d4194434c4084ff069b1795",
+      "width": 256,
+      "height": 256,
+      "sourceBytes": 60226,
+      "delivery": "web/event_starvation.webp",
+      "deliveryBytes": 43290,
+      "encoding": "lossless"
+    },
+    {
+      "source": "flower_bloom.png",
+      "sha256": "100389443643f2bf5f866093f9ea5da5001da34cd8f4d22a48583c2543d4c329",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 193909,
+      "delivery": "web/flower_bloom.webp",
+      "deliveryBytes": 146648,
+      "encoding": "lossless"
+    },
+    {
+      "source": "flower_bud.png",
+      "sha256": "e4e5935a6546f1ebcf2e49ca00054848800d781cc1770227e2d31920078db92f",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 125909,
+      "delivery": "web/flower_bud.webp",
+      "deliveryBytes": 95186,
+      "encoding": "lossless"
+    },
+    {
+      "source": "frog.png",
+      "sha256": "b00dd468d7b3f9fb6d9d7cc92598e3526f03c7ad8317bb03cadf544e1aee9919",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 280235,
+      "delivery": "web/frog.webp",
+      "deliveryBytes": 211096,
+      "encoding": "lossless"
+    },
+    {
+      "source": "grass.png",
+      "sha256": "8c5607c2280d44aa8a6651b38efddca2ec1975c67bb29b3c0232ae6c9990249e",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 210650,
+      "delivery": "web/grass.webp",
+      "deliveryBytes": 157014,
+      "encoding": "lossless"
+    },
+    {
+      "source": "grasshopper.png",
+      "sha256": "daf7755ff057866630415d06563534f5bc90595535270df75e368350496c6381",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 152809,
+      "delivery": "web/grasshopper.webp",
+      "deliveryBytes": 112908,
+      "encoding": "lossless"
+    },
+    {
+      "source": "ladybird.png",
+      "sha256": "ae5a619ffd951253777d10596402e8033778e02c5b811c2be0c13417432bf83f",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 264044,
+      "delivery": "web/ladybird.webp",
+      "deliveryBytes": 194148,
+      "encoding": "lossless"
+    },
+    {
+      "source": "mushroom.png",
+      "sha256": "7d5c1d7415b821f27b94b8d3ebf36c34762579e3e250df067e6409a2f4f7e21d",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 233845,
+      "delivery": "web/mushroom.webp",
+      "deliveryBytes": 179244,
+      "encoding": "lossless"
+    },
+    {
+      "source": "pipi.png",
+      "sha256": "ff55b07f5d45a2e78154dbcb05f2b2a9ea9fdacbdfde769d2607bf04f4eb570e",
+      "width": 1254,
+      "height": 1254,
+      "sourceBytes": 1931843,
+      "delivery": "web/pipi.webp",
+      "deliveryBytes": 1136578,
+      "encoding": "lossless"
+    },
+    {
+      "source": "poison_mushroom.png",
+      "sha256": "a17ede95cac26f07b1c05cfa383853df446257019d5662c5e00dec62bcdda9ba",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 186662,
+      "delivery": "web/poison_mushroom.webp",
+      "deliveryBytes": 137420,
+      "encoding": "lossless"
+    },
+    {
+      "source": "remains.png",
+      "sha256": "3ba7d59d20ce26d7874da1e09a5d0a7d003b98af4d617fed4e2d7b8743c5acbe",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 155416,
+      "delivery": "web/remains.webp",
+      "deliveryBytes": 116012,
+      "encoding": "lossless"
+    },
+    {
+      "source": "rock.png",
+      "sha256": "89f5102f5acb8017e6943103926c34781839fe29df97e82f0932d636965d1468",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 191525,
+      "delivery": "web/rock.webp",
+      "deliveryBytes": 136394,
+      "encoding": "lossless"
+    },
+    {
+      "source": "seed.png",
+      "sha256": "d4deac14454700d3a08b15e523227a4be37f6c491c340dfdd54fefaade60fecb",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 208360,
+      "delivery": "web/seed.webp",
+      "deliveryBytes": 158444,
+      "encoding": "lossless"
+    },
+    {
+      "source": "slug.png",
+      "sha256": "c0346f05d72b0485cb437e883edd426c97fbacfc550ce4b4b86e2bc83c47ac7a",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 133473,
+      "delivery": "web/slug.webp",
+      "deliveryBytes": 96850,
+      "encoding": "lossless"
+    },
+    {
+      "source": "spider.png",
+      "sha256": "f6ff5b2a8c9f535d829a26fb9673f99277e1a9374a8f9fd2ac35e43897176815",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 173285,
+      "delivery": "web/spider.webp",
+      "deliveryBytes": 125216,
+      "encoding": "lossless"
+    },
+    {
+      "source": "status_breeding.png",
+      "sha256": "52b476dd40d4ca1c6c186538b6390b82d278761972912f8a7d98a6c933601415",
+      "width": 1254,
+      "height": 1254,
+      "sourceBytes": 1039434,
+      "delivery": "web/status_breeding.webp",
+      "deliveryBytes": 705966,
+      "encoding": "lossless"
+    },
+    {
+      "source": "status_hungry.png",
+      "sha256": "ae28d4461e824e194e94dbdc13d4052a05da78d2ce618c88a87e0253deb3ad9a",
+      "width": 256,
+      "height": 256,
+      "sourceBytes": 60680,
+      "delivery": "web/status_hungry.webp",
+      "deliveryBytes": 45676,
+      "encoding": "lossless"
+    },
+    {
+      "source": "still_chapter2_frog.png",
+      "sha256": "de68b1833830190b386ee841ed1508d044f179d488a59b9f3abc08b76497c3ff",
+      "width": 1920,
+      "height": 1080,
+      "sourceBytes": 4310891,
+      "delivery": "web/still_chapter2_frog.webp",
+      "deliveryBytes": 240082,
+      "encoding": "quality-85"
+    },
+    {
+      "source": "still_chapter3_poison.png",
+      "sha256": "916dcb3ae701f7ceddc9d99e72b77f0df0c08873725a4f3808ef357df735f1b4",
+      "width": 1671,
+      "height": 941,
+      "sourceBytes": 3473487,
+      "delivery": "web/still_chapter3_poison.webp",
+      "deliveryBytes": 218038,
+      "encoding": "quality-85"
+    },
+    {
+      "source": "still_chapter4_birth.png",
+      "sha256": "fc7d1d9d90b63850467b643d8c81016ec889b252ceaec3091f6d9eb484a7d58e",
+      "width": 1671,
+      "height": 941,
+      "sourceBytes": 3544176,
+      "delivery": "web/still_chapter4_birth.webp",
+      "deliveryBytes": 230884,
+      "encoding": "quality-85"
+    },
+    {
+      "source": "still_chapter5_finalresearch.png",
+      "sha256": "90d1a3bd97b4b7dd017b35d32d2c6a3b88559ea19156fd503f093e2a946be96a",
+      "width": 1920,
+      "height": 1080,
+      "sourceBytes": 4478148,
+      "delivery": "web/still_chapter5_finalresearch.webp",
+      "deliveryBytes": 272272,
+      "encoding": "quality-85"
+    },
+    {
+      "source": "still_ending_nextjourney.png",
+      "sha256": "957b1b124a821c6427e961c854b22932c669dcdbb5741b9ef550912fb8e48c7f",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 3732136,
+      "delivery": "web/still_ending_nextjourney.webp",
+      "deliveryBytes": 282264,
+      "encoding": "quality-85"
+    },
+    {
+      "source": "still_opening_lab.png",
+      "sha256": "8caf57039c8fe41dd6f7a52abf7210cce2236a25bf2b52b291c9b21bf043a71c",
+      "width": 1920,
+      "height": 1080,
+      "sourceBytes": 4439049,
+      "delivery": "web/still_opening_lab.webp",
+      "deliveryBytes": 266410,
+      "encoding": "quality-85"
+    },
+    {
+      "source": "still_stage14_threeflowers.png",
+      "sha256": "87492e0e5dee785c2e5ee2b970f3917a3a1b14c69e8b2c463a5308d8b2f5113f",
+      "width": 1671,
+      "height": 941,
+      "sourceBytes": 3407246,
+      "delivery": "web/still_stage14_threeflowers.webp",
+      "deliveryBytes": 211748,
+      "encoding": "quality-85"
+    },
+    {
+      "source": "still_stage15_beforefinal.png",
+      "sha256": "08315b946102d465d9d408057b8e0383bec004c7170826a3e2753c7c59fde816",
+      "width": 1920,
+      "height": 1080,
+      "sourceBytes": 4767920,
+      "delivery": "web/still_stage15_beforefinal.webp",
+      "deliveryBytes": 334982,
+      "encoding": "quality-85"
+    },
+    {
+      "source": "still_stage15_clear.png",
+      "sha256": "63f59e5dea820e31fb95b3e7da2dd1dae71390379b32e020ea86dae40d7fffec",
+      "width": 1672,
+      "height": 941,
+      "sourceBytes": 3464889,
+      "delivery": "web/still_stage15_clear.webp",
+      "deliveryBytes": 218082,
+      "encoding": "quality-85"
+    },
+    {
+      "source": "tab_dialogue_icon.png",
+      "sha256": "42eb4671c8bd158a64de8e754c7c1c1237d63612c5f2af7977fd31eb95e016d0",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 202748,
+      "delivery": "web/tab_dialogue_icon.webp",
+      "deliveryBytes": 143366,
+      "encoding": "lossless"
+    },
+    {
+      "source": "tab_goal_icon.png",
+      "sha256": "bff255ddc3fa1c0842833a210daf20adf491b24f85279bf7d1387703680d4111",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 241188,
+      "delivery": "web/tab_goal_icon.webp",
+      "deliveryBytes": 170450,
+      "encoding": "lossless"
+    },
+    {
+      "source": "tab_hint_icon.png",
+      "sha256": "a2e592529693d428d3b77c1d3d53a29e13c960c82406cbb75e7b67e9ee42ebc4",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 195565,
+      "delivery": "web/tab_hint_icon.webp",
+      "deliveryBytes": 141438,
+      "encoding": "lossless"
+    },
+    {
+      "source": "tab_history_icon.png",
+      "sha256": "6ab5569c0a48a73fdd2dd0896d0a4968a1cd361bfe2c38ae76637a73824b5a18",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 250673,
+      "delivery": "web/tab_history_icon.webp",
+      "deliveryBytes": 178108,
+      "encoding": "lossless"
+    },
+    {
+      "source": "tab_observe_icon.png",
+      "sha256": "836675f91a1e5a1c48004cf095d9ae985642f99c907a36646c1ed242d48e90d2",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 178518,
+      "delivery": "web/tab_observe_icon.webp",
+      "deliveryBytes": 123896,
+      "encoding": "lossless"
+    },
+    {
+      "source": "tab_rules_icon.png",
+      "sha256": "5abd0ecb67a840b733cb8ca76ce1c09aad7e3af7f2d7955c55be0976d4b3191d",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 267568,
+      "delivery": "web/tab_rules_icon.webp",
+      "deliveryBytes": 193792,
+      "encoding": "lossless"
+    },
+    {
+      "source": "ui_background.png",
+      "sha256": "5cc42958e0777c8382a5895133165f3617a512a1144e9f18413e2fbb44fec2c5",
+      "width": 1920,
+      "height": 1080,
+      "sourceBytes": 4378820,
+      "delivery": "web/ui_background.webp",
+      "deliveryBytes": 215990,
+      "encoding": "quality-85"
+    },
+    {
+      "source": "ui_board_frame.png",
+      "sha256": "ea42a47bd35fa436b6b16819ceacb9793cdf95a8202958f94723250920f6c07b",
+      "width": 800,
+      "height": 800,
+      "sourceBytes": 466590,
+      "delivery": "web/ui_board_frame.webp",
+      "deliveryBytes": 350136,
+      "encoding": "lossless"
+    },
+    {
+      "source": "ui_botanical_decor.png",
+      "sha256": "09fe0fd2b8363b96cf64a3445984f4da8346175ea160892f65418a1b5fac6446",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 187022,
+      "delivery": "web/ui_botanical_decor.webp",
+      "deliveryBytes": 132844,
+      "encoding": "lossless"
+    },
+    {
+      "source": "ui_button_paper.png",
+      "sha256": "41cdbecad80739df596a4ec331781908b344cb708a0ac3b56348b8a55c94894f",
+      "width": 400,
+      "height": 110,
+      "sourceBytes": 36755,
+      "delivery": "web/ui_button_paper.webp",
+      "deliveryBytes": 27770,
+      "encoding": "lossless"
+    },
+    {
+      "source": "ui_control_paper.png",
+      "sha256": "60e6a86ddc6703837fbc61cce0018bed0bcfe545a9bf08ad7e5b14bc00c83c90",
+      "width": 941,
+      "height": 1672,
+      "sourceBytes": 2808731,
+      "delivery": "web/ui_control_paper.webp",
+      "deliveryBytes": 1622560,
+      "encoding": "lossless"
+    },
+    {
+      "source": "ui_dialogue_card.png",
+      "sha256": "6e85ad88c1c9a71dd2ae8156d77e536e45982315188b0f0cde2dfb5fa6740251",
+      "width": 2048,
+      "height": 682,
+      "sourceBytes": 2246169,
+      "delivery": "web/ui_dialogue_card.webp",
+      "deliveryBytes": 1222386,
+      "encoding": "lossless"
+    },
+    {
+      "source": "ui_header_decor.png",
+      "sha256": "2c4d27c755cca0046d27c9b4d218e319221c60b4de0e1a85aa5dc49e9599ce66",
+      "width": 1600,
+      "height": 120,
+      "sourceBytes": 269655,
+      "delivery": null,
+      "reason": "No reference in the live HTML/CSS or dynamic image manifests"
+    },
+    {
+      "source": "ui_objectives_bg_clean.png",
+      "sha256": "dcfc425228e03fc7bf7d3a54931cec3e2bf5f60fdfe861032b1664a2842ae1fd",
+      "width": 1995,
+      "height": 416,
+      "sourceBytes": 1632191,
+      "delivery": "web/ui_turn_counter_frame.webp",
+      "deliveryBytes": 959502,
+      "encoding": "lossless",
+      "aliasOf": "ui_turn_counter_frame.png"
+    },
+    {
+      "source": "ui_objectives_frame.png",
+      "sha256": "11a093f102029bf6865be317b3d6cd7f8bd232f9165526298aebbfff0e128a43",
+      "width": 2048,
+      "height": 210,
+      "sourceBytes": 828700,
+      "delivery": "web/ui_objectives_frame.webp",
+      "deliveryBytes": 464072,
+      "encoding": "lossless"
+    },
+    {
+      "source": "ui_pressed_flower_note.png",
+      "sha256": "3fe1c28df5434daa92053d0e4fe2fae2c340aa1282ca488f3131f39d461af3e0",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 211820,
+      "delivery": "web/ui_pressed_flower_note.webp",
+      "deliveryBytes": 152336,
+      "encoding": "lossless"
+    },
+    {
+      "source": "ui_research_notebook.png",
+      "sha256": "2eb34234eb76b1ad9da939cfb1c7307c7f22aff1174f307c5283439a683078c9",
+      "width": 650,
+      "height": 850,
+      "sourceBytes": 787261,
+      "delivery": "web/ui_research_notebook.webp",
+      "deliveryBytes": 584750,
+      "encoding": "lossless"
+    },
+    {
+      "source": "ui_tab_paper.png",
+      "sha256": "52a50925619cfcadc46b7947af5d2d369575fe429b4a19f34d49aaad415de6f4",
+      "width": 160,
+      "height": 110,
+      "sourceBytes": 22733,
+      "delivery": null,
+      "reason": "No reference in the live HTML/CSS or dynamic image manifests"
+    },
+    {
+      "source": "ui_title_label.png",
+      "sha256": "9c648faa5a4d8f4417cebb3577147953b8919cdd1a37ae7287f17f3a4d3c1de2",
+      "width": 800,
+      "height": 100,
+      "sourceBytes": 121769,
+      "delivery": "web/ui_title_label.webp",
+      "deliveryBytes": 91736,
+      "encoding": "lossless"
+    },
+    {
+      "source": "ui_turn_button.png",
+      "sha256": "7f16b7b9f2485a7be679416d9663d5b4e2915016ff1cb3b0e5325e438f0a56ed",
+      "width": 1930,
+      "height": 338,
+      "sourceBytes": 1043629,
+      "delivery": "web/ui_turn_button.webp",
+      "deliveryBytes": 791492,
+      "encoding": "lossless"
+    },
+    {
+      "source": "ui_turn_counter_bg_clean.png",
+      "sha256": "11a093f102029bf6865be317b3d6cd7f8bd232f9165526298aebbfff0e128a43",
+      "width": 2048,
+      "height": 210,
+      "sourceBytes": 828700,
+      "delivery": "web/ui_objectives_frame.webp",
+      "deliveryBytes": 464072,
+      "encoding": "lossless",
+      "aliasOf": "ui_objectives_frame.png"
+    },
+    {
+      "source": "ui_turn_counter_frame.png",
+      "sha256": "dcfc425228e03fc7bf7d3a54931cec3e2bf5f60fdfe861032b1664a2842ae1fd",
+      "width": 1995,
+      "height": 416,
+      "sourceBytes": 1632191,
+      "delivery": "web/ui_turn_counter_frame.webp",
+      "deliveryBytes": 959502,
+      "encoding": "lossless"
+    },
+    {
+      "source": "water.png",
+      "sha256": "3bf99b71c4369f942ad2b8c9433a78412329748a1c995df85e39a6c69dff2d8a",
+      "width": 512,
+      "height": 512,
+      "sourceBytes": 206811,
+      "delivery": "web/water.webp",
+      "deliveryBytes": 155836,
+      "encoding": "lossless"
+    }
+  ]
+}

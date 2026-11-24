@@ -1,0 +1,1151 @@
+{
+  "scenarioVersion": "3.1-story-revision",
+  "title": "宇宙生態研究所 ～ワシが地球を作り直すんじゃ！～",
+  "chapters": {
+    "1": {
+      "id": "chapter-1",
+      "title": "食べる順番、育つ未来"
+    },
+    "2": {
+      "id": "chapter-2",
+      "title": "水辺と捕食者"
+    },
+    "3": {
+      "id": "chapter-3",
+      "title": "死から分かれる道"
+    },
+    "4": {
+      "id": "chapter-4",
+      "title": "生まれる場所の取り合い"
+    },
+    "5": {
+      "id": "chapter-5",
+      "title": "完璧より、理解する地球"
+    }
+  },
+  "events": [
+    {
+      "id": "chapter.1.intro",
+      "chapterId": "chapter-1",
+      "stageId": null,
+      "kind": "intro",
+      "title": "食べる順番、育つ未来",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "ふぉーっふぉっふぉ！ よく来たのう、新人！ ここは宇宙研究船グランド・ラボラトリー号じゃ！"
+        },
+        {
+          "speaker": "doctor",
+          "text": "ワシこそ銀河最高の天才科学者、ドクター・ボルボル！ 地球より立派な地球を作って、銀河生態学会を驚かせてやるわい！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "まずは生物の配置をお願いします。なお、博士の「立派」の定義はまだ提出されていません。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "細かいことは実験してから決めるのじゃ！ 新人、まずは誰が何を食うか、見せてみい！"
+        }
+      ]
+    },
+    {
+      "id": "chapter.2.intro",
+      "chapterId": "chapter-2",
+      "stageId": null,
+      "kind": "intro",
+      "title": "水辺と捕食者",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "見よ、新人！ ワシが用意した美しい池じゃ。カエルの別荘にぴったりじゃろ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "カエルは不動産の価値を評価しません。水辺への移動と、その先の捕食を観察してください。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "ぐぬぬ、せっかくの庭じゃというのに……。よし、池一つで食物連鎖を動かしてみせるぞ！"
+        }
+      ]
+    },
+    {
+      "id": "chapter.3.intro",
+      "chapterId": "chapter-3",
+      "stageId": null,
+      "kind": "intro",
+      "title": "死から分かれる道",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "ピピよ！ 美しい紫のキノコを発見したぞ。ワシの昼飯にどうじゃ？"
+        },
+        {
+          "speaker": "pipi",
+          "text": "有毒です。試食皿は回収しました。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "危うく銀河の頭脳を失うところじゃった！ ……じゃが、死んだあとに何が残るかは調べねばならん。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "死亡の痕跡は、別の生物の資源になる場合があります。記録は省略しません。"
+        }
+      ]
+    },
+    {
+      "id": "chapter.4.intro",
+      "chapterId": "chapter-4",
+      "stageId": null,
+      "kind": "intro",
+      "title": "生まれる場所の取り合い",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "ピピィィ！ 実験箱の中で生き物が増えておるぞ！ ワシの知らぬ間に！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "繁殖です。食事だけでなく、生まれるための空き場所も必要です。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "命が増えるのはめでたい！ ……待てよ、食事の取り合いも増えるのか？"
+        },
+        {
+          "speaker": "pipi",
+          "text": "はい。博士の研究費とは違い、餌は無限ではありません。"
+        }
+      ]
+    },
+    {
+      "id": "chapter.5.intro",
+      "chapterId": "chapter-5",
+      "stageId": null,
+      "kind": "intro",
+      "title": "完璧より、理解する地球",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "いよいよ銀河生態学会へ発表じゃ！ 題名は『ワシが作った完璧な地球』！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "まだ完璧とは証明されていません。ある場所で成功しても、別の場所では困る生物がいます。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "ぐぬぬ……では最後の三実験で見せてやる！ 新人よ、ワシと一緒に箱庭全体を見渡すのじゃ！"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-1.before",
+      "chapterId": "chapter-1",
+      "stageId": "renewal-1",
+      "kind": "before",
+      "title": "01｜先に食べたのは誰？",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "草はたっぷりある。虫どもは仲良く食べればよいじゃろ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "そう単純ではありません。草を食べる順番と、イモムシが移る位置で、小鳥の食事が変わります。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "むむ、食卓にも席順があるのか。新人、最初の一手を頼むぞ！"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-1.clear",
+      "chapterId": "chapter-1",
+      "stageId": "renewal-1",
+      "kind": "clear",
+      "title": "実験成功",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "おおっ！ 草の取り合いから、鳥の食事までつながったぞ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "同じ生物でも、先に食べる側が変われば結果も変わります。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "つまりワシの朝飯をピピが先に食ったら、研究史が変わるのう！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "研究史の前に、博士の朝食が消えます。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-1.failure",
+      "chapterId": "chapter-1",
+      "stageId": "renewal-1",
+      "kind": "failure",
+      "title": "別の結果も、発見じゃ",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "むむ、草を置いたのに思いどおりに進まんぞ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "草を食べる順番と、イモムシの移動先を見直してください。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-2.before",
+      "chapterId": "chapter-1",
+      "stageId": "renewal-2",
+      "kind": "before",
+      "title": "02｜明日の草、今日の食事",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "小さな種子が、やがて草になる。なんともお得な仕組みじゃ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "小鳥に食べられなければ、です。ハチが運ぶ種子の行き先も考えてください。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "未来の草と今日の昼飯、どちらも大事とは欲張りな星じゃのう！"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-2.clear",
+      "chapterId": "chapter-1",
+      "stageId": "renewal-2",
+      "kind": "clear",
+      "title": "実験成功",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "ほほう！ 食べられた種子もあれば、草になる種子もある！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "同じ種子でも、置かれた場所と周囲の生物で未来が分かれました。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "種子一粒にも進路希望があるようじゃな。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "希望ではなく、環境条件です。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-2.failure",
+      "chapterId": "chapter-1",
+      "stageId": "renewal-2",
+      "kind": "failure",
+      "title": "別の結果も、発見じゃ",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "あれほど種子があったのに、草が足りんぞ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "小鳥に食べられる種子と、残って育つ種子を分けて追いましょう。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-3.before",
+      "chapterId": "chapter-1",
+      "stageId": "renewal-3",
+      "kind": "before",
+      "title": "03｜花の向こうのごちそう",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "花にナメクジ、そこへハチ！ ワシの庭がにぎやかになってきたのう！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "ナメクジの移動と、ハチが花に届く時刻が重要です。蜜には限りがあります。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "花は無限食堂ではないのか！ 新人、営業時間まで考えてやるのじゃ！"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-3.clear",
+      "chapterId": "chapter-1",
+      "stageId": "renewal-3",
+      "kind": "clear",
+      "title": "実験成功",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "花からハチへ、ハチから種子へ、そして次の草へ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "花の蜜を利用できる回数は限られています。だからこそ順番が重要でした。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "一輪の花から、次の命の準備まで始まるとは……地球は面白いのう！"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-3.failure",
+      "chapterId": "chapter-1",
+      "stageId": "renewal-3",
+      "kind": "failure",
+      "title": "別の結果も、発見じゃ",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "花はあるのに、思ったほど先へつながらん！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "ナメクジの位置、ハチの到着時刻、種子の散布先を確認しましょう。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-4.before",
+      "chapterId": "chapter-2",
+      "stageId": "renewal-4",
+      "kind": "before",
+      "title": "04｜水辺に来た番人",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "新しい警備隊長を紹介するぞ！ 緑のムチムチ跳躍生命体じゃ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "カエルです。近くに獲物がいなければ、水辺へ移動します。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "かわいい顔をして、食事のために池へ向かうとは。立派な隊長じゃ！"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-4.clear",
+      "chapterId": "chapter-2",
+      "stageId": "renewal-4",
+      "kind": "clear",
+      "title": "実験成功",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "おおっ、池を置いたらカエルの食卓まで動いたぞ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "水辺は飾りではなく、移動先を変える地形です。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "ワシの庭造りが、生態学に昇格した瞬間じゃな！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "最初から生態学の実験です。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-4.failure",
+      "chapterId": "chapter-2",
+      "stageId": "renewal-4",
+      "kind": "failure",
+      "title": "別の結果も、発見じゃ",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "警備隊長が、ワシの思った場所へ行かんぞ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "隣の獲物を優先するか、水辺へ向かうかを確認してください。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-5.before",
+      "chapterId": "chapter-2",
+      "stageId": "renewal-5",
+      "kind": "before",
+      "title": "05｜岸で育った餌",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "岸辺の草は育ちが早い！ ならばバッタも喜んで飛んでくるじゃろ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "バッタは近くに食べられる草があれば、そちらを優先します。水辺を越えるとは限りません。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "飛ぶより食う方が先か！ ワシにも覚えがあるのう。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-5.clear",
+      "chapterId": "chapter-2",
+      "stageId": "renewal-5",
+      "kind": "clear",
+      "title": "実験成功",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "岸の草が育つ時刻と、バッタが来る道筋がかみ合ったぞ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "岸辺では種子が早く育ちます。一方、バッタの移動は近くの餌にも左右されます。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "草を育てるだけでは足りんのか。食べに来る側にも都合があるんじゃな！"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-5.failure",
+      "chapterId": "chapter-2",
+      "stageId": "renewal-5",
+      "kind": "failure",
+      "title": "別の結果も、発見じゃ",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "バッタめ、跳んでほしいときに限って草を食っとる！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "近くに草がある場合と、水辺を跳び越える場合の条件を比べましょう。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-6.before",
+      "chapterId": "chapter-2",
+      "stageId": "renewal-6",
+      "kind": "before",
+      "title": "06｜食べることで守る",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "草を守るために、食べる生き物を増やす？ なんじゃその逆転の発想は！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "アブラムシを食べるテントウムシが、草の消費を変えます。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "ふぉっふぉっふぉ！ 食べる者が、別の食べ物を守る。ワシ好みの難問じゃ！"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-6.clear",
+      "chapterId": "chapter-2",
+      "stageId": "renewal-6",
+      "kind": "clear",
+      "title": "実験成功",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "テントウムシが食べたおかげで、草が残ったか！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "捕食した相手だけでなく、その相手が食べるはずだった資源にも影響します。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "ひと口の食事が、よその献立まで書き換えるとはのう！"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-6.failure",
+      "chapterId": "chapter-2",
+      "stageId": "renewal-6",
+      "kind": "failure",
+      "title": "別の結果も、発見じゃ",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "テントウムシを置いたのに、草が守れんぞ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "アブラムシが草を利用する時刻と、捕食される時刻を確かめてください。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-7.before",
+      "chapterId": "chapter-3",
+      "stageId": "renewal-7",
+      "kind": "before",
+      "title": "07｜紫の死から、花へ",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "あの紫キノコ、やはり見た目はうまそうじゃ……。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "試食は禁止です。今回は毒による死亡と、その後の開花、ハチの訪花を観察します。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "死んだあとまで実験が続くのか。……記録は丁寧に頼むぞ。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-7.clear",
+      "chapterId": "chapter-3",
+      "stageId": "renewal-7",
+      "kind": "clear",
+      "title": "実験成功",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "命が消えたあとに花が開き、ハチが訪れるとは……。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "死亡そのものと、その後の訪花や種子の成長は、順序の異なる出来事です。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "「終わり」だと思った場所にも、次があるんじゃな。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-7.failure",
+      "chapterId": "chapter-3",
+      "stageId": "renewal-7",
+      "kind": "failure",
+      "title": "別の結果も、発見じゃ",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "毒の結果ばかり見て、その後を見落としてしもうた。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "死亡した場所と時刻、その後の開花と訪花を分けて確認しましょう。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-8.before",
+      "chapterId": "chapter-3",
+      "stageId": "renewal-8",
+      "kind": "before",
+      "title": "08｜残すもの、食べるもの",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "死んだ生き物の痕跡から、キノコが生えるのじゃろ？"
+        },
+        {
+          "speaker": "pipi",
+          "text": "それだけではありません。ミミズが痕跡を利用すると、種子の成長にも影響します。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "ミミズは土の下の研究員か！ 給料は何を払えばよい？"
+        },
+        {
+          "speaker": "pipi",
+          "text": "まずは食事を残してください。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-8.clear",
+      "chapterId": "chapter-3",
+      "stageId": "renewal-8",
+      "kind": "clear",
+      "title": "実験成功",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "ミミズが痕跡を利用し、種子を助け、今度は鳥の食事に……。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "一匹の生物が、複数の関係に参加しています。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "働き者じゃのう。……食べられたあとまで、ちゃんと記録しておこう。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-8.failure",
+      "chapterId": "chapter-3",
+      "stageId": "renewal-8",
+      "kind": "failure",
+      "title": "別の結果も、発見じゃ",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "キノコとミミズ、両方に同じ痕跡を使わせたいのう。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "痕跡を先に利用する側と、種子に作用する場所を見直しましょう。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-9.before",
+      "chapterId": "chapter-3",
+      "stageId": "renewal-9",
+      "kind": "before",
+      "title": "09｜捕食者を残す理由",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "クモがハチを食う！？ 花の世話係までごちそう扱いか！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "クモも生きるために食べます。小鳥の捕食とミミズの働きも含めて考えてください。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "誰かを守れば、別の誰かの食事が消える。……むずかしい星じゃ。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-9.clear",
+      "chapterId": "chapter-3",
+      "stageId": "renewal-9",
+      "kind": "clear",
+      "title": "実験成功",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "ハチにも、クモにも、小鳥にも、それぞれ食べる理由があるのう。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "捕食と分解の結果が、花や草の未来に影響しました。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "むやみに「悪者」を決めるのは、科学者のすることではないかもしれん。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-9.failure",
+      "chapterId": "chapter-3",
+      "stageId": "renewal-9",
+      "kind": "failure",
+      "title": "別の結果も、発見じゃ",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "一匹を守ると、別のところの食事が狂うぞ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "クモとハチ、小鳥とミミズの位置関係を別々に確認してください。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-10.before",
+      "chapterId": "chapter-4",
+      "stageId": "renewal-10",
+      "kind": "before",
+      "title": "10｜小さな足音が増える",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "ピピィィ！ 今度は生き物が増える実験じゃ！ ちびっこいのを見てみたいぞ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "種子が食べられて空くマスが、出生位置を変えます。その位置は開花にも関係します。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "小さな種子一つが、子どもの居場所を左右するのか。慎重に頼むぞ、新人。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-10.clear",
+      "chapterId": "chapter-4",
+      "stageId": "renewal-10",
+      "kind": "clear",
+      "title": "実験成功",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "生まれた！ ちびっこいのがおるぞ！ おぬしは今日からモチ丸じゃ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "博士、実験個体への私的な命名を確認しました。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "よいではないか！ 種子が一つ消えた場所に、新しい命が来たんじゃぞ。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "出生位置も、花の状態も確認しました。……モチ丸の記録も残します。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-10.failure",
+      "chapterId": "chapter-4",
+      "stageId": "renewal-10",
+      "kind": "failure",
+      "title": "別の結果も、発見じゃ",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "あれ？ モチ丸が生まれてこんぞ……いや、まだ名前が早かったか！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "小鳥が種子を食べた後の空きマスと、親の出生条件を確認してください。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-11.before",
+      "chapterId": "chapter-4",
+      "stageId": "renewal-11",
+      "kind": "before",
+      "title": "11｜誰の子が先に生まれる？",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "今度は二組の親が、子の場所を取り合うのか！ 研究船の部屋割りみたいじゃな。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "出生は親の位置順に処理されます。先に埋まるマスが、次の出生先を変えます。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "ワシの船室は譲らんぞ！ ……いや、今は実験の話じゃった。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-11.clear",
+      "chapterId": "chapter-4",
+      "stageId": "renewal-11",
+      "kind": "clear",
+      "title": "実験成功",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "先に生まれた子が、もう一組の行き先まで変えたぞ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "同じ空きマスでも、誰が先に利用するかで結果が変わります。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "命が増えるのはうれしいが、住む場所まで考えてやらねばならんのう。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-11.failure",
+      "chapterId": "chapter-4",
+      "stageId": "renewal-11",
+      "kind": "failure",
+      "title": "別の結果も、発見じゃ",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "二組とも増えるつもりが、席が足りんのう！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "親が処理される順番と、出生先の空きを確認してください。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-12.before",
+      "chapterId": "chapter-4",
+      "stageId": "renewal-12",
+      "kind": "before",
+      "title": "12｜生まれて、巡る",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "親と子、どちらが生き残るかも、配置しだいなのか……。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "出生位置の後に捕食が起こり、翌日の痕跡とミミズの働きへ続きます。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "新人よ。今回はワシの思いつきより、おぬしの判断を信じる。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-12.clear",
+      "chapterId": "chapter-4",
+      "stageId": "renewal-12",
+      "kind": "clear",
+      "title": "実験成功",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "生まれた命、失われた命……どちらも、その後の箱庭を変えておる。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "残った個体と死亡した個体を、それぞれ記録しました。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "……見事じゃったぞ、新人。ワシなら、結果の数だけを見ておったかもしれん。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-12.failure",
+      "chapterId": "chapter-4",
+      "stageId": "renewal-12",
+      "kind": "failure",
+      "title": "別の結果も、発見じゃ",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "ほんの一マスで、親子の行く末が変わるんじゃな……。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "出生位置、捕食地点、翌日の痕跡を順に確認しましょう。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-13.before",
+      "chapterId": "chapter-5",
+      "stageId": "renewal-13",
+      "kind": "before",
+      "title": "13｜離れた場所の食事計画",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "箱が広い！ これならワシの天才も存分に発揮できるぞ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "離れた場所では、それぞれ別の出来事が進みます。蜜の残量と、捕食者の餌の選択を確認してください。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "全部が一本の鎖とは限らんわけか。新人、場所ごとの記録を頼むぞ！"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-13.clear",
+      "chapterId": "chapter-5",
+      "stageId": "renewal-13",
+      "kind": "clear",
+      "title": "実験成功",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "おおっ！ 離れた場所で、異なる出来事が同じ期間に成立したぞ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "直接つながる現象と、独立して起きた現象を区別して記録しました。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "何でも「ワシの壮大な連鎖」と呼ぶのは早計じゃな。……少しだけな！"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-13.failure",
+      "chapterId": "chapter-5",
+      "stageId": "renewal-13",
+      "kind": "failure",
+      "title": "別の結果も、発見じゃ",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "こちらは成功したのに、向こうが合わん！ 広い箱は手ごわいのう。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "二つの領域を分けて、採蜜と捕食の結果を確認しましょう。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-14.before",
+      "chapterId": "chapter-5",
+      "stageId": "renewal-14",
+      "kind": "before",
+      "title": "14｜三輪の約束",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "新人よ。今日はどうしても花を三輪、咲かせたいんじゃ。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "研究上の理由は？ 出生先を塞ぐ種子、カエルの捕食、毒の結果を調整できますが。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "……研究船が少々殺風景でのう。いや、もちろん立派な生態実験じゃぞ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "承知しました。研究目的欄には「開花三輪」と記録します。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-14.clear",
+      "chapterId": "chapter-5",
+      "stageId": "renewal-14",
+      "kind": "clear",
+      "title": "実験成功",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "……三輪とも咲いたのう。違う出来事を経て、同じように花が開く。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "開花までの経緯は、それぞれ異なります。出生と死亡も記録しました。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "ピピよ。今くらい、数字はよいじゃろ。……きれいじゃな。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "……では、少しだけ眺めていましょう。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-14.failure",
+      "chapterId": "chapter-5",
+      "stageId": "renewal-14",
+      "kind": "failure",
+      "title": "別の結果も、発見じゃ",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "あと一輪が足りんのう……今日は少し残念じゃ。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "種子による出生先の変化と、捕食・毒による開花の条件を確認しましょう。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-15.before",
+      "chapterId": "chapter-5",
+      "stageId": "renewal-15",
+      "kind": "before",
+      "title": "15｜五日間の生態系",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "新人よ……ついに最後の五周期実験じゃ。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "草を食べる順番、水辺への移動、出生と開花。これまでの要素を組み合わせます。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "最初は生き物など、ワシの命令一つで動かせると思っとった。じゃが、こやつらはそれぞれの都合で生きておる。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "……だから、見ていて飽きんのじゃな。最後の配置は、おぬしに任せるぞ！"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-15.clear",
+      "chapterId": "chapter-5",
+      "stageId": "renewal-15",
+      "kind": "clear",
+      "title": "実験成功",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "できた……！ 五周期の結果、すべての条件がそろったぞ！ 見事じゃ、新人！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "ただし、条件を達成した時点から先まで、安定が続くとは限りません。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "……そうか。ワシの「完璧な地球」は、まだ完成したとは言えんのう。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "観測を終了しますか？"
+        },
+        {
+          "speaker": "doctor",
+          "text": "いや、もう少し見ていたい。この先、あの花や虫がどうなるのか……気になるんじゃ。"
+        }
+      ]
+    },
+    {
+      "id": "stage.renewal-15.failure",
+      "chapterId": "chapter-5",
+      "stageId": "renewal-15",
+      "kind": "failure",
+      "title": "別の結果も、発見じゃ",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "惜しいのう……じゃが、何が起きたかはもう一度確かめられる。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "五周期を順に再生して、条件が変わった場面を確認しましょう。"
+        }
+      ]
+    },
+    {
+      "id": "ending.all",
+      "chapterId": "chapter-5",
+      "stageId": null,
+      "kind": "ending",
+      "title": "支配するより、理解する",
+      "lines": [
+        {
+          "speaker": "doctor",
+          "text": "ふぉーっふぉっふぉ！ 全十五実験、達成じゃ！ これで地球の生態系を完全解明……と言いたいところじゃが。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "人工の小さな箱の、数周期分の結果です。地球全体の未来は証明できません。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "分かっとるわい！ ……いや、昔のワシなら分かっとらんかったかもしれん。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "草を食う虫、虫を追う鳥、土を変えるミミズ。誰一匹、ワシの命令で生きておったわけではない。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "はい。環境と、他の生物との関係の中で動いていました。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "ワシは生命を支配したかった。じゃが今は、あやつらが次に何をするのか知りたくて仕方がないんじゃ。"
+        },
+        {
+          "speaker": "pipi",
+          "text": "では、論文の題名『ワシが作った完璧な地球』は変更しますか？"
+        },
+        {
+          "speaker": "doctor",
+          "text": "うむ！ 『地球の生命は、ワシの予想よりずっと面白い』じゃ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "学術的な題名としては、もう少し検討が必要です。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "ぐぬぬ！ ……ところで銀河生態学会からの返事はまだか？"
+        },
+        {
+          "speaker": "pipi",
+          "text": "届いています。「研究計画書を再提出してください」。ただし、新人助手の実験設計は高く評価されています。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "な、なんじゃとぉ！？ ……ふむ。見たか新人！ ワシらの研究が認められたのじゃ！ よくやったぞ！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "博士。先ほどからモチ丸の記録を探されていますが、どの実験の個体ですか？"
+        },
+        {
+          "speaker": "doctor",
+          "text": "モチ丸はモチ丸じゃ！ あの、ちびっこくて元気な……"
+        },
+        {
+          "speaker": "pipi",
+          "text": "複数の実験で同じ名前を使われています。個体は実験ごとに引き継がれません。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "な、なんじゃとぉぉ！ ならば次からは全員に別の名前を付けてやるわい！"
+        },
+        {
+          "speaker": "pipi",
+          "text": "博士、まずは昨日の夕食の名前から思い出してください。"
+        },
+        {
+          "speaker": "doctor",
+          "text": "やかましーーーい！ ……新人よ、次の観察も一緒に頼むぞ！"
+        }
+      ]
+    }
+  ]
+}
